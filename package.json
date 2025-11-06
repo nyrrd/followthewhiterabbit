@@ -2,15 +2,16 @@
   "name": "ftwr",
   "version": "1.8.0",
   "description": "Doks theme",
-  "author": "Thulite",
+  "author": "Kharon Studios",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thuliteio/doks.git"
+    "url": "https://github.com/nyrrd/doks.git"
   },
   "scripts": {
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
+    "devb": "hugo server --bind 192.168.50.60 -p 1414 --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
     "build": "hugo --minify --gc",
     "preview": "vite preview --outDir public"
