@@ -1,5 +1,5 @@
 title = "Follow The White Rabbit"
-baseurl = "http://localhost/"
+baseurl = "http://192.168.50.60/"
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
@@ -15,7 +15,8 @@ defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = false
 
-copyRight = "Ferried by Kharon Studios"
+#copyRight = "Copyright (c) 2020-2024 Thulite"
+copyRight = "Copyright (c) 2020-2024 Kharon Studios"
 
 [build.buildStats]
   enable = true

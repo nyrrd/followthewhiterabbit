@@ -11,7 +11,7 @@
   "scripts": {
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
-    "devb": "hugo server --bind 192.168.50.60 -p 1414 --disableFastRender --noHTTPCache",
+    "devb": "hugo server --bind 192.168.50.60 --baseURL=http://192.168.50.60 -p 1414 --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
     "build": "hugo --minify --gc",
     "preview": "vite preview --outDir public"
