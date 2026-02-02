@@ -1,2 +1,3 @@
 # Overrides for production environment
-baseurl = "https://followthewhiterabbit.xyz"
+#baseurl = "https://followthewhiterabbit.xyz"
+baseurl = "https://ftwr.github.io"
