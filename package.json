@@ -1,5 +1,5 @@
 {
-  "name": "ftwr",
+  "name": "Follow The White Rabbit",
   "version": "1.8.0",
   "description": "Doks theme",
   "author": "Kharon Studios",
@@ -11,7 +11,7 @@
   "scripts": {
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
-    "format": "prettier **/** -w -c",
+    "format": "prettier **/** -wc",
     "build": "hugo --minify --gc",
     "preview": "vite preview --outDir public"
   },
@@ -30,7 +30,7 @@
     "vite": "^7.0.6"
   },
   "engines": {
-    "node": ">=20.11.0"
+    "node": ">=22.12.0"
   },
   "publishConfig": {
     "access": "public",
