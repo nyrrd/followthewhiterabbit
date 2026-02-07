@@ -1,6 +1,6 @@
-<!--{{ if site.Params.doks.alert -}}
+{{ if site.Params.doks.alert -}}
   {{ partial "header/alert.html" . }}
-{{ end -}}-->
+{{ end -}}
 
 {{ if site.Params.doks.navbarSticky -}}
 <div class="sticky-top">
@@ -10,16 +10,24 @@
 <div class="header-bar"></div>
 {{ end -}}
 
-<!--<header>
-  {{ if site.Params.doks.alert -}}
-  {{ partial "header/alert.html" . }}
+<header class="navbar navbar-expand-lg">
+  {{ with site.Params.doks.containerBreakpoint -}}
+    <div class="container-{{ . }}">
+  {{ else -}}
+    <div class="container">
   {{ end -}}
 
-  {{ if site.Params.doks.navbarSticky -}}
-  <div class="sticky-top">
-  {{ end -}}
+    <!-- Site title -->
+    <!-- Replaced logo PNG with inline SVGs for icon and text -->
+    <a class="navbar-brand order-0 d-flex align-items-center" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
+      <span class="d-flex align-items-center" style="height: 64px;">
+	<!-- {{ partial "inline-svg.html" (dict "src" "ocm-logo-icon-colour") }} -->
+      </span><span class="d-flex align-items-center" style="height: 64px; margin-left: -0.2rem;">
+		<!-- {{ partial "inline-svg.html" (dict "src" "ocm-logo-text") }} -->
+      </span>
+    </a>
 
-  {{ if site.Params.doks.headerBar -}}
-  <div class="header-bar"></div>
-  {{ end -}}
-</header> -->
+<!-- Search modal -->
+{{ if site.Params.doks.flexSearch -}}
+  {{ partial "header/search-modal" . }}
+{{ end -}}
